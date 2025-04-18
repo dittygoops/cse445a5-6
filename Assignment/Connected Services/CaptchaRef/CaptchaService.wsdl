@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://assignment.edu/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://assignment.edu/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://assignment.edu/">
+      <s:element name="GenerateCaptcha">
+        <s:complexType />
+      </s:element>
+      <s:element name="GenerateCaptchaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerateCaptchaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyCaptcha">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyCaptchaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VerifyCaptchaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GenerateCaptchaSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerateCaptcha" />
+  </wsdl:message>
+  <wsdl:message name="GenerateCaptchaSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerateCaptchaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyCaptchaSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyCaptcha" />
+  </wsdl:message>
+  <wsdl:message name="VerifyCaptchaSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyCaptchaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CaptchaServiceSoap">
+    <wsdl:operation name="GenerateCaptcha">
+      <wsdl:input message="tns:GenerateCaptchaSoapIn" />
+      <wsdl:output message="tns:GenerateCaptchaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyCaptcha">
+      <wsdl:input message="tns:VerifyCaptchaSoapIn" />
+      <wsdl:output message="tns:VerifyCaptchaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CaptchaServiceSoap" type="tns:CaptchaServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GenerateCaptcha">
+      <soap:operation soapAction="http://assignment.edu/GenerateCaptcha" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyCaptcha">
+      <soap:operation soapAction="http://assignment.edu/VerifyCaptcha" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CaptchaServiceSoap12" type="tns:CaptchaServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GenerateCaptcha">
+      <soap12:operation soapAction="http://assignment.edu/GenerateCaptcha" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyCaptcha">
+      <soap12:operation soapAction="http://assignment.edu/VerifyCaptcha" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CaptchaService">
+    <wsdl:port name="CaptchaServiceSoap" binding="tns:CaptchaServiceSoap">
+      <soap:address location="https://localhost:44389/CaptchaService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CaptchaServiceSoap12" binding="tns:CaptchaServiceSoap12">
+      <soap12:address location="https://localhost:44389/CaptchaService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

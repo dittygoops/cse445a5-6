@@ -42,7 +42,8 @@
                                 Access your account to manage your preferences and settings. If you don't have an account, you can create one.
                             </p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
-                                <a class="btn btn-primary" href="#">Log In</a>
+                                <a class="btn btn-primary" href="Login.aspx?type=member">Log In</a>
+
                                 <a class="btn btn-outline-primary" href="#">Create Account</a>
                             </div>
                         </div>
@@ -57,7 +58,8 @@
                                 Staff members can log in to access internal resources and tools.
                             </p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
-                                <a class="btn btn-primary" href="#">Log In</a>
+                               <a class="btn btn-primary" href="Login.aspx?type=staff">Log In</a>
+
                             </div>
                         </div>
                     </div>
