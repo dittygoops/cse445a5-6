@@ -47,7 +47,7 @@
                             <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
                                 <a class="btn btn-primary" href="Login.aspx?type=member">Log In</a>
 
-                                <a class="btn btn-outline-primary" href="#">Create Account</a>
+                                <a class="btn btn-outline-primary" href="Signup.aspx">Create Account</a>
                             </div>
                         </div>
                     </div>

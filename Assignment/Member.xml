@@ -1,7 +1,15 @@
-﻿<Users>
-	<!-- Example of a member -->
-	<Member>
-		<Username>DDrbcT31Tq13rlqDKLWbbaxuMmc9ogkuoV8EzKkOaj8==</Username>
-		<Password>DDrbcT31Tq13rlqDKLWbbaxuMmc9ogkuoV8EzKkOaj8==</Password>
-	</Member>
+<Users>
+  <!-- Example of a member -->
+  <Member>
+    <Username>aditya</Username>
+    <Password>JlcZ9OfuAy/koMXtVzWgUwVF5PNchkgVXcVFAzAyfio=</Password>
+  </Member>
+  <Member>
+    <Username>test</Username>
+    <Password>n4bQgYhMfWWaL+qgxVrQFaO/TxsrC4Is0V1sFbDwCgg=</Password>
+  </Member>
+  <Member>
+    <Username>abhave</Username>
+    <Password>DDrbcT31Tq13rlqDKLWbbaxuMmc9ogkuoV8EzKkOaj8=</Password>
+  </Member>
 </Users>

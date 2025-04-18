@@ -9,19 +9,13 @@ using LoginSecurityLib;
 
 namespace Assignment
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class Signup : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
                 LoadCaptcha();
-
-                string userType = Request.QueryString["type"];
-                if (userType == "staff")
-                    loginTitle.InnerText = "Staff Login";
-                else
-                    loginTitle.InnerText = "Member Login";
             }
         }
 
@@ -36,7 +30,7 @@ namespace Assignment
             LoadCaptcha();
         }
 
-        protected void LoginButton_Click(object sender, EventArgs e)
+        protected void SignupButton_Click(object sender, EventArgs e)
         {
             var captchaService = new CaptchaService();
             bool isValid = captchaService.VerifyCaptcha(CaptchaInput.Text.Trim());
@@ -53,53 +47,45 @@ namespace Assignment
             CaptchaFeedback.Text = "✅ Captcha verified.";
             CaptchaFeedback.ForeColor = System.Drawing.Color.Green;
 
-            // Get role (member or staff)
-            string role = Request.QueryString["type"];
+            string enteredPass = Hasher.Hash(PasswordInput.Text.Trim());
+            string enteredConfirmPass = Hasher.Hash(ConfirmPasswordInput.Text.Trim());
 
-            if (string.IsNullOrEmpty(role))
+            if (enteredPass != enteredConfirmPass)
             {
-                CaptchaFeedback.Text = "❌ Login type missing. Use ?type=member or ?type=staff.";
+                CaptchaFeedback.Text = "❌ Passwords do not match.";
                 CaptchaFeedback.ForeColor = System.Drawing.Color.Red;
+                LoadCaptcha();
                 return;
             }
-
-            string tag = char.ToUpper(role[0]) + role.Substring(1); // "Member" or "Staff"
-
-            string enteredPass = Hasher.Hash(PasswordInput.Text.Trim());
 
             string filePath = Server.MapPath("~/Member.xml");
 
             XmlDocument doc = new XmlDocument();
             doc.Load(filePath);
 
-            bool match = doc.SelectNodes("//" + tag).Cast<XmlNode>().Any(user =>
-                user["Username"]?.InnerText == UsernameInput.Text.Trim() &&
-                user["Password"]?.InnerText == enteredPass
-            );
-
-            if (match)
+            // check if username already exists
+            XmlNode existingUser = doc.SelectSingleNode("//Member[Username='" + UsernameInput.Text.Trim() + "']");
+            if (existingUser != null)
             {
-                Session["user"] = UsernameInput.Text.Trim();
-                Session["role"] = role;
-
-                LoginStatusLabel.Text = "✅ Login successful!";
-                LoginStatusLabel.ForeColor = System.Drawing.Color.Green;
-
-                // Redirect to correct page
-                // Response.Redirect(role == "staff" ? "Staff.aspx" : "Member.aspx");
-            }
-            else
-            {
-                CaptchaFeedback.Text = "❌ Invalid username or password.";
+                CaptchaFeedback.Text = "❌ Username already exists.";
                 CaptchaFeedback.ForeColor = System.Drawing.Color.Red;
                 LoadCaptcha();
+                return;
             }
+            // write to xml file
+            XmlNode newUser = doc.CreateNode(XmlNodeType.Element, "Member", "");
+            newUser.AppendChild(doc.CreateElement("Username")).InnerText = UsernameInput.Text.Trim();
+            newUser.AppendChild(doc.CreateElement("Password")).InnerText = enteredPass;
+            doc.DocumentElement.AppendChild(newUser);
+            doc.Save(filePath);
+
+            Session["user"] = UsernameInput.Text.Trim();
+
+            SignupStatusLabel.Text = "✅ Signup successful!";
+            SignupStatusLabel.ForeColor = System.Drawing.Color.Green;
+
+            // Redirect to correct page with parameter
+            Response.Redirect("Login.aspx?type=member");
         }
-
-
-
-
-
-
     }
 }
