@@ -5,7 +5,7 @@
     <main>
         <!-- Hero Section with Full-Screen Image -->
         <section 
-            class="text-center vw-100 vh-100 position-relative" 
+            class="text-center position-relative" 
             style="background-image: url('Images/BAP_Homepage_BG.png'); 
                    background-size: cover; 
                    background-position: center; 
@@ -14,7 +14,10 @@
                    align-items: center; 
                    justify-content: center; 
                    margin: 0; 
-                   padding: 0;" 
+                   padding: 0;
+                   width: 100%;
+                   height: 100vh;
+                   overflow: hidden;" 
             aria-labelledby="aspnetTitle">
             <div class="position-absolute w-100 h-100" style="background: rgba(0,0,0,0.4); z-index: 1;"></div>
             <div class="container-fluid position-relative" style="z-index: 2;">
