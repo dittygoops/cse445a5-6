@@ -17,7 +17,7 @@
                    padding: 0;" 
             aria-labelledby="aspnetTitle">
             <div class="position-absolute w-100 h-100" style="background: rgba(0,0,0,0.4); z-index: 1;"></div>
-            <div class="container position-relative" style="z-index: 2;">
+            <div class="container-fluid position-relative" style="z-index: 2;">
                 <div class="row py-lg-5">
                     <div class="col-lg-8 col-md-10 mx-auto">
                         <h1 id="aspnetTitle" class="fw-bold display-3 text-white" style="text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">
