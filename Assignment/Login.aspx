@@ -31,6 +31,18 @@
         <!-- Add this line below -->
         <asp:Label ID="LoginStatusLabel" runat="server" CssClass="form-text text-success mt-3" />
 
+        <% if (Request.QueryString["type"] == "staff") { %>
+            <div class="card my-3" style="background-color: #e3f2fd;">
+                <div class="card-body">
+                    <h5 class="card-title">Example Credentials for Testing</h5>
+                    <p class="card-text">You can use the following credentials for testing:</p>
+                    <ul>
+                        <li>Username: TA</li>
+                        <li>Password: Cse445!</li>
+                    </ul>
+                </div>
+            </div>
+        <% } %>
 
     </main>
 </asp:Content>
