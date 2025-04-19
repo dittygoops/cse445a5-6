@@ -4,8 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment", "Assignment.csproj", "{C32CF20F-6FDF-437E-836A-FC35B8C70783}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C59F1814-5434-48C2-9CA7-41BBF9AA70E6} = {C59F1814-5434-48C2-9CA7-41BBF9AA70E6}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginSecurityLib", "..\LoginSecurityLib\LoginSecurityLib.csproj", "{528A4383-312A-45F6-BEC2-826376DA516F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLocationService", "..\GeoLocationService\GeoLocationService.csproj", "{C59F1814-5434-48C2-9CA7-41BBF9AA70E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{528A4383-312A-45F6-BEC2-826376DA516F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{528A4383-312A-45F6-BEC2-826376DA516F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{528A4383-312A-45F6-BEC2-826376DA516F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C59F1814-5434-48C2-9CA7-41BBF9AA70E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C59F1814-5434-48C2-9CA7-41BBF9AA70E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C59F1814-5434-48C2-9CA7-41BBF9AA70E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C59F1814-5434-48C2-9CA7-41BBF9AA70E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

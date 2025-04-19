@@ -109,6 +109,19 @@
     <Content Include="Connected Services\CaptchaRef\Assignment.CaptchaRef.VerifyCaptchaResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\GeoService\Assignment.GeoService.GetLatLongResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\GeoService\Assignment.GeoService.LocationResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\GeoService\GeoLocationWebService.disco" />
+    <None Include="Connected Services\GeoService\configuration91.svcinfo" />
+    <None Include="Connected Services\GeoService\configuration.svcinfo" />
+    <None Include="Connected Services\GeoService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Events.xml" />
     <Content Include="HashTryIt.aspx" />
     <Content Include="Member.aspx" />
@@ -171,6 +184,7 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Connected Services\CaptchaRef\CaptchaService.wsdl" />
+    <None Include="Connected Services\GeoService\GeoLocationWebService.wsdl" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -221,6 +235,11 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Connected Services\CaptchaRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\GeoService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -319,6 +338,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\CaptchaRef\" />
+    <WCFMetadataStorage Include="Connected Services\GeoService\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LoginSecurityLib\LoginSecurityLib.csproj">

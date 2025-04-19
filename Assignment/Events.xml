@@ -10,24 +10,51 @@
     <RSVPed>
       <User>john</User>
       <User>alice</User>
-      <User>test</User>
       <User>abhave</User>
+      <User>test</User>
     </RSVPed>
     <Attending>
       <User>john</User>
+      <User>test|2025-04-19 13:07:25</User>
+      <User>abhave|2025-04-19 13:13:25</User>
     </Attending>
   </Event>
   <Event>
     <Name>Tech Conference</Name>
-    <Info>Explore the latest in technology and innovation.</Info>
+    <Info>Explore the latest in technology and innovation at ASU</Info>
     <Date>2024-05-10</Date>
     <Time>10:00 AM</Time>
     <Location>Convention Center</Location>
     <Hours>8</Hours>
     <RSVPed>
-      <User>test</User>
       <User>abhave</User>
     </RSVPed>
+    <Attending>
+      <User>abhave|2025-04-19 13:13:28</User>
+    </Attending>
+  </Event>
+  <Event>
+    <Name>test</Name>
+    <Info>test</Info>
+    <Date>test</Date>
+    <Time>test</Time>
+    <Location>test</Location>
+    <Hours>test</Hours>
+    <RSVPed />
     <Attending />
+  </Event>
+  <Event>
+    <Name>HI</Name>
+    <Info>TEst for HI and LAt and LOng Service</Info>
+    <Date>2025-12-1</Date>
+    <Time>5:00 PM</Time>
+    <Location>Arizona State University Tempe</Location>
+    <Hours>2</Hours>
+    <RSVPed>
+      <User>test</User>
+    </RSVPed>
+    <Attending />
+    <Latitude>33.4213174</Latitude>
+    <Longitude>-111.933163054132</Longitude>
   </Event>
 </Events>

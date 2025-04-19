@@ -9,29 +9,48 @@
         <h1 class="mb-4">Upcoming Events</h1>
 
         <asp:Repeater ID="EventRepeater" runat="server" OnItemCommand="EventRepeater_ItemCommand">
-            <ItemTemplate>
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-body">
-                        <h4 class="card-title"><%# Eval("Name") %></h4>
-                        <p class="card-text"><strong>Date:</strong> <%# Eval("Date") %></p>
-                        <p class="card-text"><strong>Time:</strong> <%# Eval("Time") %></p>
-                        <p class="card-text"><strong>Location:</strong> <%# Eval("Location") %></p>
-                        <p class="card-text"><strong>Hours:</strong> <%# Eval("Hours") %></p>
-                        <asp:Button ID="MoreInfoButton" runat="server" Text="More Info" CommandName="MoreInfo" CommandArgument='<%# Eval("Name") %>' CssClass="btn btn-outline-info btn-sm me-2" />
-                        <asp:Button 
-    ID="RSVPButton" 
-    runat="server" 
-    Text="RSVP" 
-    CommandName="RSVP" 
-    CommandArgument='<%# Eval("Name") %>' 
-    Enabled='<%# !(bool)Eval("IsRSVPed") %>' 
-    CssClass='<%# (bool)Eval("IsRSVPed") ? "btn btn-secondary btn-sm me-2" : "btn btn-outline-success btn-sm me-2" %>' />
+                <ItemTemplate>
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title"><%# Eval("Name") %></h4>
 
-                        <asp:Button ID="CheckInButton" runat="server" Text="Check In" CommandName="CheckIn" CommandArgument='<%# Eval("Name") %>' CssClass="btn btn-outline-primary btn-sm" />
+                            <!-- Collapsible section -->
+                            <div id='info_<%# Eval("Name").ToString().Replace(" ", "") %>' class="collapse">
+                                <p><strong>Date:</strong> <%# Eval("Date") %></p>
+                                <p><strong>Time:</strong> <%# Eval("Time") %></p>
+                                <p><strong>Location:</strong> <%# Eval("Location") %></p>
+                                <p><strong>Hours:</strong> <%# Eval("Hours") %></p>
+                            </div>
+
+                            <!-- Buttons -->
+                            <asp:Button 
+                                ID="MoreInfoButton" 
+                                runat="server" 
+                                Text="More Info" 
+                                CssClass="btn btn-outline-info btn-sm me-2" 
+                                OnClientClick='<%# "toggleInfo(\"info_" + Eval("Name").ToString().Replace(" ", "") + "\"); return false;" %>' />
+
+                            <asp:Button 
+                                ID="RSVPButton" 
+                                runat="server" 
+                                Text='<%# (bool)Eval("IsRSVPed") ? "Un-RSVP" : "RSVP" %>' 
+                                CommandName="RSVP" 
+                                CommandArgument='<%# Eval("Name") %>' 
+                                CssClass='<%# (bool)Eval("IsRSVPed") ? "btn btn-secondary btn-sm me-2" : "btn btn-outline-success btn-sm me-2" %>' />
+
+
+                            <asp:Button 
+                                ID="CheckInButton" 
+                                runat="server" 
+                                Text="Check In" 
+                                OnClientClick='<%# "checkInWithLocation(\"" + Eval("Name") + "\"); return false;" %>' 
+                                CssClass="btn btn-outline-primary btn-sm" />
+
+
+                        </div>
                     </div>
-                </div>
-            </ItemTemplate>
-        </asp:Repeater>
+                </ItemTemplate>
+            </asp:Repeater>
     </div>
 
     <!-- Modal -->
@@ -61,4 +80,32 @@
             feedbackModal.show();
         }
     </script>
+    <script>
+        function toggleInfo(id) {
+            const element = document.getElementById(id);
+            if (element.classList.contains("show")) {
+                bootstrap.Collapse.getInstance(element)?.hide();
+            } else {
+                new bootstrap.Collapse(element).show();
+            }
+        }
+    </script>
+    <script>
+        function checkInWithLocation(eventName) {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+                    const argument = eventName + "|" + lat + "|" + lon;
+
+                    __doPostBack('CheckInWithLocation', argument);
+                }, function (error) {
+                    alert("❌ Failed to get your location. Please enable location services.");
+                });
+            } else {
+                alert("❌ Geolocation is not supported by this browser.");
+            }
+        }
+    </script>
+
 </asp:Content>
