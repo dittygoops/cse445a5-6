@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace Assignment
 {
@@ -11,7 +8,21 @@ namespace Assignment
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                HttpCookie cookie = Request.Cookies["UserAuth"];
+                if (cookie != null)
+                {
+                    string role = cookie["Role"];
+                    string currentPage = System.IO.Path.GetFileName(Request.Url.AbsolutePath).ToLower();
 
+                    if (role == "member" && currentPage != "member.aspx")
+                        Response.Redirect("~/Member.aspx");
+
+                    else if (role == "staff" && currentPage != "staff.aspx")
+                        Response.Redirect("~/Staff.aspx");
+                }
+            }
         }
     }
 }

@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Xml;
 using LoginSecurityLib;
 
@@ -15,6 +13,16 @@ namespace Assignment
         {
             if (!IsPostBack)
             {
+                HttpCookie cookie = Request.Cookies["UserAuth"];
+                if (cookie != null)
+                {
+                    string role = cookie["Role"];
+                    if (role == "member")
+                        Response.Redirect("~/Member.aspx");
+                    else if (role == "staff")
+                        Response.Redirect("~/Staff.aspx");
+                }
+
                 LoadCaptcha();
 
                 string userType = Request.QueryString["type"];
@@ -49,13 +57,7 @@ namespace Assignment
                 return;
             }
 
-            // Confirm Captcha passed
-            CaptchaFeedback.Text = "✅ Captcha verified.";
-            CaptchaFeedback.ForeColor = System.Drawing.Color.Green;
-
-            // Get role (member or staff)
             string role = Request.QueryString["type"];
-
             if (string.IsNullOrEmpty(role))
             {
                 CaptchaFeedback.Text = "❌ Login type missing. Use ?type=member or ?type=staff.";
@@ -63,10 +65,8 @@ namespace Assignment
                 return;
             }
 
-            string tag = char.ToUpper(role[0]) + role.Substring(1); // "Member" or "Staff"
-
+            string tag = char.ToUpper(role[0]) + role.Substring(1);
             string enteredPass = Hasher.Hash(PasswordInput.Text.Trim());
-
             string filePath = Server.MapPath("~/Member.xml");
 
             XmlDocument doc = new XmlDocument();
@@ -79,14 +79,13 @@ namespace Assignment
 
             if (match)
             {
-                Session["user"] = UsernameInput.Text.Trim();
-                Session["role"] = role;
+                HttpCookie userCookie = new HttpCookie("UserAuth");
+                userCookie["Username"] = UsernameInput.Text.Trim();
+                userCookie["Role"] = role;
+                userCookie.Expires = DateTime.Now.AddHours(1);
+                Response.Cookies.Add(userCookie);
 
-                LoginStatusLabel.Text = "✅ Login successful!";
-                LoginStatusLabel.ForeColor = System.Drawing.Color.Green;
-
-                // Redirect to correct page
-                // Response.Redirect(role == "staff" ? "Staff.aspx" : "Member.aspx");
+                Response.Redirect(role == "staff" ? "Staff.aspx" : "Member.aspx");
             }
             else
             {
@@ -95,11 +94,5 @@ namespace Assignment
                 LoadCaptcha();
             }
         }
-
-
-
-
-
-
     }
 }

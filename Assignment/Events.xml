@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event>
+    <Name>Networking Night</Name>
+    <Info>Meet professionals and grow your network.</Info>
+    <Date>2024-04-25</Date>
+    <Time>6:00 PM</Time>
+    <Location>West Campus</Location>
+    <Hours>2</Hours>
+    <RSVPed>
+      <User>john</User>
+      <User>alice</User>
+      <User>test</User>
+      <User>abhave</User>
+    </RSVPed>
+    <Attending>
+      <User>john</User>
+    </Attending>
+  </Event>
+  <Event>
+    <Name>Tech Conference</Name>
+    <Info>Explore the latest in technology and innovation.</Info>
+    <Date>2024-05-10</Date>
+    <Time>10:00 AM</Time>
+    <Location>Convention Center</Location>
+    <Hours>8</Hours>
+    <RSVPed>
+      <User>test</User>
+      <User>abhave</User>
+    </RSVPed>
+    <Attending />
+  </Event>
+</Events>

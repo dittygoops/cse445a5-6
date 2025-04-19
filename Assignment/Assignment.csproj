@@ -109,7 +109,9 @@
     <Content Include="Connected Services\CaptchaRef\Assignment.CaptchaRef.VerifyCaptchaResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Events.xml" />
     <Content Include="HashTryIt.aspx" />
+    <Content Include="Member.aspx" />
     <Content Include="Member.xml" />
     <None Include="Connected Services\CaptchaRef\CaptchaService.disco" />
     <None Include="Connected Services\CaptchaRef\configuration91.svcinfo" />
@@ -198,6 +200,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Signup.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="Staff.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -253,6 +256,13 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Member.aspx.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member.aspx.designer.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Signup.aspx.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
@@ -274,6 +284,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.aspx.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff.aspx.designer.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
