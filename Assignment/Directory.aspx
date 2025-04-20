@@ -22,15 +22,30 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><!-- Provider Name --></td>
-                                    <td><!-- Component Type --></td>
-                                    <td><!-- Operation Name --></td>
-                                    <td><!-- Parameters and Their Types --></td>
-                                    <td><!-- Return Type --></td>
-                                    <td><!-- Function Description --></td>
+                                    <td>Hash Service</td>
+                                    <td>DLL Function</td>
+                                    <td>Hash</td>
+                                    <td>Input to be hashed (string)</td>
+                                    <td>Hashed string (string)</td>
+                                    <td>Hashing the input string</td>
                                     <td><a href="HashTryIt.aspx">TryIt Page</a></td>
                                 </tr>
                                 <!-- Add more rows as needed -->
+                                 <tr>
+                                    <td rowspan="2">Captcha Service</td>
+                                    <td rowspan="2">ASMX Web Service</td>
+                                    <td>GenerateCaptcha</td>
+                                    <td>None</td>
+                                    <td>Base64 encoded image (string)</td>
+                                    <td>Generates a new captcha image</td>
+                                    <td rowspan="2"><a href="CaptchaTryIt.aspx">TryIt Page</a></td>
+                                </tr>
+                                <tr>
+                                    <td>VerifyCaptcha</td>
+                                    <td>User input (string)</td>
+                                    <td>Boolean</td>
+                                    <td>Verifies if the user's input matches the captcha</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

@@ -103,6 +103,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="CaptchaService.asmx" />
+    <Content Include="CaptchaTryIt.aspx" />
     <Content Include="Connected Services\CaptchaRef\Assignment.CaptchaRef.GenerateCaptchaResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -234,6 +235,13 @@
     <Compile Include="CaptchaService.asmx.cs">
       <DependentUpon>CaptchaService.asmx</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CaptchaTryIt.aspx.cs">
+      <DependentUpon>CaptchaTryIt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CaptchaTryIt.aspx.designer.cs">
+      <DependentUpon>CaptchaTryIt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Connected Services\CaptchaRef\Reference.cs">
       <AutoGen>True</AutoGen>
