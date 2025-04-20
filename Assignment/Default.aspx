@@ -71,9 +71,9 @@
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0">
                         <div class="card-body">
-                            <h2 id="directoryTitle" class="card-title fw-bold">Service Directory</h2>
+                            <h2 id="directoryTitle" class="card-title fw-bold">Services and Components Directory</h2>
                             <p class="card-text">
-                                Access the service directory for more information about the services used in this project.
+                                Access the service and components directory for more information about the services and components used in this project.
                             </p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
                                <a class="btn btn-primary" href="Directory.aspx">Go to Directory</a>

@@ -6,38 +6,44 @@
         <div class="col">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-body">
-                    <h2 id="directoryTableTitle" class="card-title fw-bold">Service Directory Table</h2>
+                    <h2 id="directoryTableTitle" class="card-title fw-bold">Services and Components Directory Table</h2>
                     <div class="table-responsive">
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
+                                    <th>Member Name</th>
                                     <th>Provider Name</th>
                                     <th>Component Type</th>
                                     <th>Operation Name</th>
-                                    <th>Parameters and Their Types</th>
-                                    <th>Return Type</th>
-                                    <th>Function Description</th>
+                                    <th>Inputs</th>
+                                    <th>Outputs</th>
+                                    <th>Description</th>
+                                    <th>Implementation Details</th>
                                     <th>TryIt Page Link</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td>John Doe</td>
                                     <td>Hash Service</td>
                                     <td>DLL Function</td>
                                     <td>Hash</td>
                                     <td>Input to be hashed (string)</td>
                                     <td>Hashed string (string)</td>
                                     <td>Hashing the input string</td>
+                                    <td>this is what we used for the hash service</td>
                                     <td><a href="HashTryIt.aspx">TryIt Page</a></td>
                                 </tr>
                                 <!-- Add more rows as needed -->
                                  <tr>
+                                    <td rowspan="2">Jane Doe</td>
                                     <td rowspan="2">Captcha Service</td>
                                     <td rowspan="2">ASMX Web Service</td>
                                     <td>GenerateCaptcha</td>
                                     <td>None</td>
                                     <td>Base64 encoded image (string)</td>
                                     <td>Generates a new captcha image</td>
+                                    <td rowspan="2">this is what we used for the captcha service</td>
                                     <td rowspan="2"><a href="CaptchaTryIt.aspx">TryIt Page</a></td>
                                 </tr>
                                 <tr>
@@ -48,12 +54,14 @@
                                 </tr>
 
                                 <tr>
+                                    <td>John Doe</td>
                                     <td>GeoLocation Service</td>
                                     <td>SOAP Web Service</td>
                                     <td>GetLatLong</td>
                                     <td>Address (string)</td>
                                     <td>LocationResult (object)</td>
                                     <td>Retrieves latitude and longitude for a given address</td>
+                                    <td>this is what we used for the geolocation service</td>
                                     <td><a href="GeoLocationTryIt.aspx">TryIt Page</a></td>
                                 </tr>
                             </tbody>
