@@ -46,6 +46,16 @@
                                     <td>Boolean</td>
                                     <td>Verifies if the user's input matches the captcha</td>
                                 </tr>
+
+                                <tr>
+                                    <td>GeoLocation Service</td>
+                                    <td>SOAP Web Service</td>
+                                    <td>GetLatLong</td>
+                                    <td>Address (string)</td>
+                                    <td>LocationResult (object)</td>
+                                    <td>Retrieves latitude and longitude for a given address</td>
+                                    <td><a href="GeoLocationTryIt.aspx">TryIt Page</a></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

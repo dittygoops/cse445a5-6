@@ -74,10 +74,23 @@
     <!-- Bootstrap modal logic -->
     <script>
         function showModal(message) {
-            const modalMessage = document.getElementById("ModalMessage");
-            modalMessage.innerText = message;
-            const feedbackModal = new bootstrap.Modal(document.getElementById('FeedbackModal'));
-            feedbackModal.show();
+            // Wait for document ready to ensure DOM elements exist
+            document.addEventListener('DOMContentLoaded', function() {
+                const modalMessage = document.getElementById("ModalMessage");
+                if (modalMessage) {
+                    modalMessage.innerText = message;
+                    
+                    // Check if bootstrap is loaded
+                    if (typeof bootstrap !== 'undefined') {
+                        const feedbackModal = new bootstrap.Modal(document.getElementById('FeedbackModal'));
+                        feedbackModal.show();
+                    } else {
+                        // Fallback if bootstrap isn't loaded yet
+                        console.error("Bootstrap is not loaded. Message:", message);
+                        alert(message); // Fallback to regular alert
+                    }
+                }
+            });
         }
     </script>
     <script>

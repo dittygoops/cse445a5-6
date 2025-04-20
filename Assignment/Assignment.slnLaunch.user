@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Assignment.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\GeoLocationService\\GeoLocationService.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

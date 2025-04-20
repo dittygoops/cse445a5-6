@@ -68,7 +68,8 @@ namespace Assignment
             double eventLon = double.Parse(eventNode["Longitude"].InnerText);
 
             double distance = CalculateDistance(userLat, userLon, eventLat, eventLon);
-            if (distance > 0.1)
+            
+            if (distance > 1)
             {
                 ShowModal("❌ You were too far away to RSVP.");
             }

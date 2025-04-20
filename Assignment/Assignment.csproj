@@ -125,6 +125,7 @@
     </None>
     <Content Include="Directory.aspx" />
     <Content Include="Events.xml" />
+    <Content Include="GeoLocationTryIt.aspx" />
     <Content Include="HashTryIt.aspx" />
     <Content Include="Member.aspx" />
     <Content Include="Member.xml" />
@@ -273,6 +274,13 @@
     </Compile>
     <Compile Include="Directory.aspx.designer.cs">
       <DependentUpon>Directory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GeoLocationTryIt.aspx.cs">
+      <DependentUpon>GeoLocationTryIt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GeoLocationTryIt.aspx.designer.cs">
+      <DependentUpon>GeoLocationTryIt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
