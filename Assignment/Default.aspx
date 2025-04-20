@@ -67,6 +67,21 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h2 id="directoryTitle" class="card-title fw-bold">Service Directory</h2>
+                            <p class="card-text">
+                                Access the service directory for more information about the services used in this project.
+                            </p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                               <a class="btn btn-primary" href="Directory.aspx">Go to Directory</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

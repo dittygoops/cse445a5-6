@@ -10,8 +10,8 @@
     <RSVPed>
       <User>john</User>
       <User>alice</User>
-      <User>abhave</User>
       <User>test</User>
+      <User>abhave</User>
     </RSVPed>
     <Attending>
       <User>john</User>
