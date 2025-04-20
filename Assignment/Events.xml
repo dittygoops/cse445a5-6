@@ -9,9 +9,9 @@
     <Hours>2</Hours>
     <RSVPed>
       <User>test</User>
-      <User>aditya</User>
     </RSVPed>
-    <Attending />
+    <Attending>
+    </Attending>
     <Latitude>33.4213174</Latitude>
     <Longitude>-111.933163054132</Longitude>
   </Event>
@@ -23,9 +23,9 @@
     <Location>Vista del Sol, Tempe, Arizona</Location>
     <Hours>2</Hours>
     <RSVPed>
-      <User>aditya</User>
     </RSVPed>
-    <Attending />
+    <Attending>
+    </Attending>
     <Latitude>33.4255117</Latitude>
     <Longitude>-111.940016</Longitude>
   </Event>

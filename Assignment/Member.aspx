@@ -42,9 +42,10 @@
                             <asp:Button 
                                 ID="CheckInButton" 
                                 runat="server" 
-                                Text="Check In" 
-                                OnClientClick='<%# "checkInWithLocation(\"" + Eval("Name") + "\"); return false;" %>' 
-                                CssClass="btn btn-outline-primary btn-sm" />
+                                Text='<%# (bool)Eval("IsCheckedIn") ? "Checked In" : "Check In" %>'
+                                CommandName="CheckIn"
+                                CommandArgument='<%# Eval("Name") %>'
+                                CssClass='<%# (bool)Eval("IsRSVPed") && (bool)Eval("IsCheckedIn") ? "btn btn-secondary btn-sm me-2" : "btn btn-outline-primary btn-sm me-2" %>' />
 
 
                         </div>

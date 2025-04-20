@@ -68,7 +68,7 @@ namespace Assignment
             double eventLon = double.Parse(eventNode["Longitude"].InnerText);
 
             double distance = CalculateDistance(userLat, userLon, eventLat, eventLon);
-            
+
             if (distance > 1)
             {
                 ShowModal("❌ You were too far away to RSVP.");
@@ -201,6 +201,17 @@ namespace Assignment
                 {
                     // REMOVE user
                     rsvpedNode.RemoveChild(existingUser);
+                    
+                    // if the user is attending, remove them from attending
+                    XmlNode attendingNode = eventNode["Attending"];
+                    // iterate through the children of the attending node and remove the user
+                    foreach (XmlNode child in attendingNode.ChildNodes)
+                    {
+                        if (child.InnerText.StartsWith(username + "|"))
+                        {
+                            attendingNode.RemoveChild(child);
+                        }
+                    }
                     Session["RSVPMessage"] = "❌ You have removed your RSVP from this event.";
                 }
 
@@ -238,9 +249,14 @@ namespace Assignment
                     eventNode.AppendChild(attendingNode);
                 }
 
-                bool alreadyCheckedIn = attendingNode.SelectNodes("User")
-                    .Cast<XmlNode>()
-                    .Any(node => node.InnerText == username);
+                bool alreadyCheckedIn = false;
+                foreach (XmlNode child in attendingNode.ChildNodes)
+                {
+                    if (child.InnerText.StartsWith(username + "|"))
+                    {
+                        alreadyCheckedIn = true;
+                    }
+                }
 
                 if (!alreadyCheckedIn)
                 {
@@ -262,7 +278,25 @@ namespace Assignment
                 }
                 else
                 {
-                    Session["RSVPMessage"] = "❌ You have already checked into this event.";
+                    // iterate through the children of the attending node and remove the user
+                    foreach (XmlNode child in attendingNode.ChildNodes)
+                        {
+                        if (child.InnerText.StartsWith(username + "|"))
+                        {
+                            attendingNode.RemoveChild(child);
+                        }
+                    }   
+                    Session["RSVPMessage"] = "❌ Removed from attending.";
+                }
+
+                try
+                {
+                    doc.Save(filePath);
+                }
+                catch (Exception ex)
+                {
+                    ShowModal($"⚠️ Error updating check-in: {ex.Message}");
+                    return;
                 }
 
                 Response.Redirect(Request.RawUrl); // reload with message
