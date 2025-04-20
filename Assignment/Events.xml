@@ -8,8 +8,10 @@
     <Location>Arizona State University Tempe</Location>
     <Hours>2</Hours>
     <RSVPed>
+      <User>aditya</User>
     </RSVPed>
     <Attending>
+      <User>aditya|2025-04-20 15:16:49</User>
     </Attending>
     <Latitude>33.4213174</Latitude>
     <Longitude>-111.933163054132</Longitude>
@@ -27,5 +29,35 @@
     </Attending>
     <Latitude>33.4255117</Latitude>
     <Longitude>-111.940016</Longitude>
+  </Event>
+  <Event>
+    <Name>Spanish Externship</Name>
+    <Info>Fun two day trip with the Spanish Committee to practice learned skills.</Info>
+    <Date>2026-02-22</Date>
+    <Time>12:00AM</Time>
+    <Location>Barcelona, Spain</Location>
+    <Hours>48</Hours>
+    <RSVPed>
+      <User>aditya</User>
+    </RSVPed>
+    <Attending>
+      <User>aditya|2025-04-20 15:35:47</User>
+    </Attending>
+    <Latitude>41.3828939</Latitude>
+    <Longitude>2.1774322</Longitude>
+  </Event>
+  <Event>
+    <Name>Meet the President</Name>
+    <Info>Meet the President to learn more about the daily tasks on the most powerful man on earth.</Info>
+    <Date>2025-05-24</Date>
+    <Time>10:00AM</Time>
+    <Location>1600 Pennsylvania Avenue NW, Washington, DC 20500</Location>
+    <Hours>2</Hours>
+    <RSVPed>
+    </RSVPed>
+    <Attending>
+    </Attending>
+    <Latitude>38.897718</Latitude>
+    <Longitude>-77.0365482</Longitude>
   </Event>
 </Events>

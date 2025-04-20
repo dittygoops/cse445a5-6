@@ -17,7 +17,7 @@ namespace Assignment
                 HttpCookie cookie = Request.Cookies["UserAuth"];
                 if (cookie == null || cookie["Role"] != "member")
                 {
-                    Response.Redirect("~/Default.aspx");
+                    Response.Redirect("~/Default.aspx", false);
                     return;
                 }
 
@@ -69,6 +69,8 @@ namespace Assignment
 
             double distance = CalculateDistance(userLat, userLon, eventLat, eventLon);
 
+            System.Diagnostics.Debug.WriteLine("Distance: " + distance + " miles");
+
             if (distance > 1)
             {
                 ShowModal("❌ You were too far away to RSVP.");
@@ -94,6 +96,8 @@ namespace Assignment
                        Math.Sin(dLon / 2) * Math.Sin(dLon / 2);
 
             double c = 2 * Math.Asin(Math.Sqrt(a));
+            // not yet imported System.Diagnostics
+            System.Diagnostics.Debug.WriteLine("Distance: " + R * c + " miles");
             return R * c;
         }
 
@@ -225,7 +229,7 @@ namespace Assignment
                     return;
                 }
 
-                Response.Redirect(Request.RawUrl); // Reload page and trigger message
+                Response.Redirect(Request.RawUrl, false); // Reload page and trigger message
             }
 
             if (e.CommandName == "CheckIn")
@@ -299,7 +303,7 @@ namespace Assignment
                     return;
                 }
 
-                Response.Redirect(Request.RawUrl); // reload with message
+                Response.Redirect(Request.RawUrl, false); // reload with message
             }
 
 

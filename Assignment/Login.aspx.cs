@@ -18,9 +18,9 @@ namespace Assignment
                 {
                     string role = cookie["Role"];
                     if (role == "member")
-                        Response.Redirect("~/Member.aspx");
+                        Response.Redirect("~/Member.aspx", false);
                     else if (role == "staff")
-                        Response.Redirect("~/Staff.aspx");
+                        Response.Redirect("~/Staff.aspx", false);
                 }
 
                 LoadCaptcha();
@@ -85,7 +85,7 @@ namespace Assignment
                 userCookie.Expires = DateTime.Now.AddHours(1);
                 Response.Cookies.Add(userCookie);
 
-                Response.Redirect(role == "staff" ? "Staff.aspx" : "Member.aspx");
+                Response.Redirect(role == "staff" ? "Staff.aspx" : "Member.aspx", false);
             }
             else
             {

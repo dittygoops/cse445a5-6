@@ -85,7 +85,7 @@ namespace Assignment
             SignupStatusLabel.ForeColor = System.Drawing.Color.Green;
 
             // Redirect to correct page with parameter
-            Response.Redirect("Login.aspx?type=member");
+            Response.Redirect("Login.aspx?type=member", false);
         }
     }
 }

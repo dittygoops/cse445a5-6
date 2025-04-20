@@ -17,10 +17,10 @@ namespace Assignment
                     string currentPage = System.IO.Path.GetFileName(Request.Url.AbsolutePath).ToLower();
 
                     if (role == "member" && currentPage != "member.aspx")
-                        Response.Redirect("~/Member.aspx");
+                        Response.Redirect("~/Member.aspx", false);
 
                     else if (role == "staff" && currentPage != "staff.aspx")
-                        Response.Redirect("~/Staff.aspx");
+                        Response.Redirect("~/Staff.aspx", false);
                 }
             }
         }

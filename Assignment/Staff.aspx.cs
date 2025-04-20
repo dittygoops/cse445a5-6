@@ -14,7 +14,7 @@ namespace Assignment
             HttpCookie cookie = Request.Cookies["UserAuth"];
             if (cookie == null || cookie["Role"] != "staff")
             {
-                Response.Redirect("~/Default.aspx");
+                Response.Redirect("~/Default.aspx", false);
                 return;
             }
 
