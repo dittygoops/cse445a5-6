@@ -7,6 +7,9 @@
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-body">
                     <h2 id="directoryTableTitle" class="card-title fw-bold">Services and Components Directory Table</h2>
+                    <div class="bg-light mb-3 p-2">
+                        <strong>Member Contribution: Abhave Abhilash 60%, Aditya Gupta 40%</strong>
+                    </div>
                     <div class="table-responsive">
                         <table class="table table-bordered">
                             <thead>
@@ -31,7 +34,7 @@
                                     <td>Input to be hashed (string)</td>
                                     <td>Hashed string (string)</td>
                                     <td>Hashing the input string</td>
-                                    <td>this is what we used for the hash service</td>
+                                    <td>DLL function, System.Security.Cryptography.SHA256 library</td>
                                     <td><a href="HashTryIt.aspx">TryIt Page</a></td>
                                 </tr>
                                 <!-- Add more rows as needed -->
@@ -43,7 +46,7 @@
                                     <td>None</td>
                                     <td>Base64 encoded image (string)</td>
                                     <td>Generates a new captcha image</td>
-                                    <td rowspan="2">this is what we used for the captcha service</td>
+                                    <td rowspan="2">System.Drawing library, sessions, base64 encoding</td>
                                     <td rowspan="2"><a href="CaptchaTryIt.aspx">TryIt Page</a></td>
                                 </tr>
                                 <tr>
@@ -61,8 +64,85 @@
                                     <td>Address (string)</td>
                                     <td>LocationResult (object)</td>
                                     <td>Retrieves latitude and longitude for a given address</td>
-                                    <td>this is what we used for the geolocation service</td>
+                                    <td>3rd party Geoapify API</td>
                                     <td><a href="GeoLocationTryIt.aspx">TryIt Page</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>Member Storage</td>
+                                    <td>XML Data</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Store member role and credentials</td>
+                                    <td>Member.xml</td>
+                                </tr>
+
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>Events Storage</td>
+                                    <td>XML Data</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Store event information, RSVPees and checkins</td>
+                                    <td>Events.xml</td>
+                                </tr>
+
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>Session starting application</td>
+                                    <td>Global.asax</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Logs session user, role, and start and end times</td>
+                                    <td>C# code in Global.asax</td>
+                                </tr>
+
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>Cookies</td>
+                                    <td>HTTP Cookie</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Convey user role and username</td>
+                                    <td>C# code</td>
+                                </tr>
+
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>Landing Page</td>
+                                    <td>.aspx page</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Display landing page with BAP introduction, login, register options, and directory link</td>
+                                    <td>GUI Design and C# code behind GUI</td>
+                                </tr>
+
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>User Authentication Pages</td>
+                                    <td>.aspx page</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Pages to handle user authentication with captcha</td>
+                                    <td>GUI Design and C# code behind GUI</td>
+                                </tr>
+
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>Dashboards</td>
+                                    <td>.aspx page</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Display dashboards for members and providers</td>
+                                    <td>GUI Design and C# code behind GUI</td>
                                 </tr>
                             </tbody>
                         </table>

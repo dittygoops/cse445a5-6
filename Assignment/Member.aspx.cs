@@ -245,6 +245,7 @@ namespace Assignment
                     ShowModal("⚠️ You must RSVP before checking in.");
                     return;
                 }
+                
 
                 XmlNode attendingNode = eventNode["Attending"];
                 if (attendingNode == null)
