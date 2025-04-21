@@ -2,6 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
+    <a href="Directory.aspx" class="btn btn-primary" style="margin: 20px;">Go to Directory</a>
     <main>
         <!-- Hero Section with Full-Screen Image -->
         <section 

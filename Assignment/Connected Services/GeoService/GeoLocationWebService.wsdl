@@ -64,10 +64,10 @@
   </wsdl:binding>
   <wsdl:service name="GeoLocationWebService">
     <wsdl:port name="GeoLocationWebServiceSoap" binding="tns:GeoLocationWebServiceSoap">
-      <soap:address location="https://localhost:44382/GeoLocationWebService.asmx" />
+      <soap:address location="http://webstrar34.fulton.asu.edu/page1/GeoLocationWebService.asmx" />
     </wsdl:port>
     <wsdl:port name="GeoLocationWebServiceSoap12" binding="tns:GeoLocationWebServiceSoap12">
-      <soap12:address location="https://localhost:44382/GeoLocationWebService.asmx" />
+      <soap12:address location="http://webstrar34.fulton.asu.edu/page1/GeoLocationWebService.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

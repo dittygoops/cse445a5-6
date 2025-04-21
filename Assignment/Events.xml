@@ -53,10 +53,28 @@
     <Location>1600 Pennsylvania Avenue NW, Washington, DC 20500</Location>
     <Hours>2</Hours>
     <RSVPed>
+      <User>aditya</User>
     </RSVPed>
     <Attending>
+      <User>aditya|2025-04-20 17:00:16</User>
     </Attending>
     <Latitude>38.897718</Latitude>
     <Longitude>-77.0365482</Longitude>
+  </Event>
+  <Event>
+    <Name>Semester Banquet</Name>
+    <Info>Meet the rest of the club at an end of the year celebration! Learn what the club has accomplished over the past few months.</Info>
+    <Date>2025-05-02</Date>
+    <Time>6:00PM</Time>
+    <Location>Old Main Ballroom Arizona State University</Location>
+    <Hours>2</Hours>
+    <RSVPed>
+      <User>aditya</User>
+    </RSVPed>
+    <Attending>
+      <User>aditya|2025-04-20 17:06:15</User>
+    </Attending>
+    <Latitude>40.7964652</Latitude>
+    <Longitude>-77.862789491026</Longitude>
   </Event>
 </Events>
