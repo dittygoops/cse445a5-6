@@ -42,9 +42,6 @@ namespace Assignment
         public bool VerifyCaptcha(string input)
         {
             string storedCaptcha = Session["captcha"] as string;
-            System.Diagnostics.Debug.WriteLine("verifying captcha");
-            System.Diagnostics.Debug.WriteLine(string.Equals(input, storedCaptcha, StringComparison.OrdinalIgnoreCase));
-            System.Diagnostics.Debug.WriteLine(storedCaptcha);
             return string.Equals(input, storedCaptcha, StringComparison.OrdinalIgnoreCase);
         }
 
