@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\captchaservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:captchaservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\login.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:login.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\member.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:member.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\login.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:login.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\captchaservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:captchaservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
@@ -31,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\member.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:member.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\staff.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:staff.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -45,9 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\staff.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:staff.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C59F1814-5434-48C2-9CA7-41BBF9AA70E6}|..\\GeoLocationService\\GeoLocationService.csproj|c:\\users\\aabhilas\\cse445a5-6\\geolocationservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\member.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -61,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 183,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -73,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Login.aspx.designer.cs",
               "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Login.aspx.designer.cs",
               "RelativeDocumentMoniker": "Login.aspx.designer.cs",
@@ -86,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Member.aspx",
               "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Member.aspx",
               "RelativeDocumentMoniker": "Member.aspx",
@@ -99,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Staff.aspx",
               "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Staff.aspx",
               "RelativeDocumentMoniker": "Staff.aspx",
@@ -112,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Staff.aspx.cs",
               "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Staff.aspx.cs",
               "RelativeDocumentMoniker": "Staff.aspx.cs",
@@ -125,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Events.xml",
               "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Events.xml",
               "RelativeDocumentMoniker": "Events.xml",
@@ -138,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Login.aspx.cs",
               "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Login.aspx.cs",
               "RelativeDocumentMoniker": "Login.aspx.cs",
@@ -151,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Login.aspx",
               "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Login.aspx",
               "RelativeDocumentMoniker": "Login.aspx",
@@ -177,20 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\GeoLocationService\\Web.config",
-              "RelativeDocumentMoniker": "..\\GeoLocationService\\Web.config",
-              "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\GeoLocationService\\Web.config",
-              "RelativeToolTip": "..\\GeoLocationService\\Web.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-04-26T19:32:07.27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Site.Master",
               "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Site.Master",
               "RelativeDocumentMoniker": "Site.Master",
@@ -213,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Default.aspx",
               "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Default.aspx",
               "RelativeDocumentMoniker": "Default.aspx",
@@ -226,13 +214,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Member.aspx.cs",
               "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Member.aspx.cs",
               "RelativeDocumentMoniker": "Member.aspx.cs",
               "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Member.aspx.cs",
               "RelativeToolTip": "Member.aspx.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwDcAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-20T04:41:20.178Z",
               "EditorCaption": ""
@@ -240,11 +228,24 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Web.config*",
+              "RelativeToolTip": "Web.config*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-26T22:14:22.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CaptchaService.asmx.cs",
               "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\CaptchaService.asmx.cs",
               "RelativeDocumentMoniker": "CaptchaService.asmx.cs",
-              "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\CaptchaService.asmx.cs*",
-              "RelativeToolTip": "CaptchaService.asmx.cs*",
+              "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\CaptchaService.asmx.cs",
+              "RelativeToolTip": "CaptchaService.asmx.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T04:15:17.723Z",
