@@ -1,6 +1,19 @@
 ﻿<%@ Page Title="Staff Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Staff.aspx.cs" Inherits="Assignment.Staff" %>
 
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+            <h2 id="directoryTitle" class="card-title fw-bold">Staff Page</h2>
+            <p class="card-text">
+                This page allows staff to:
+                <ul>
+                    <li>Create new events.</li>
+                    <li>View all events including the RSVPed and checked-in users.</li>
+                    <li>Edit event details.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
     <div class="container py-4">
         <h1 class="mb-4">All Events</h1>
 

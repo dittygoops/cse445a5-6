@@ -5,6 +5,20 @@
 </asp:Content>
 
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+            <h2 id="directoryTitle" class="card-title fw-bold">Member Page</h2>
+            <p class="card-text">
+                This page allows members to:
+                <ul>
+                    <li>List view upcoming events and check in to them.</li>
+                    <li>View details about each event, including location, date, time, and description.</li>
+                    <li>RSVP for events and manage their RSVP status.</li>
+                    <li>Check in to events and receive confirmation.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
     <div class="container py-4">
         <h1 class="mb-4">Upcoming Events</h1>
 
@@ -20,6 +34,7 @@
                                 <p><strong>Time:</strong> <%# Eval("Time") %></p>
                                 <p><strong>Location:</strong> <%# Eval("Location") %></p>
                                 <p><strong>Hours:</strong> <%# Eval("Hours") %></p>
+                                <p><strong>Info:</strong> <%# Eval("Info") %></p>
                             </div>
 
                             <!-- Buttons -->
