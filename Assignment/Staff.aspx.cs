@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Web;
+using System.Web.Security; // ✅ Add this
 using System.Web.UI.WebControls;
 using System.Xml;
 
@@ -14,7 +16,9 @@ namespace Assignment
             HttpCookie cookie = Request.Cookies["UserAuth"];
             if (cookie == null || cookie["Role"] != "staff")
             {
-                Response.Redirect("~/Default.aspx", false);
+                // Not logged in or wrong role
+                Response.Redirect("~/Login.aspx?type=staff", false);
+                Context.ApplicationInstance.CompleteRequest();
                 return;
             }
 
@@ -23,6 +27,7 @@ namespace Assignment
                 LoadEvents();
             }
         }
+
 
         private void LoadEvents()
         {
@@ -91,7 +96,6 @@ namespace Assignment
                     if (eventNode["Location"].InnerText != newLocation)
                     {
                         eventNode["Location"].InnerText = newLocation;
-                        changes.Add($"Location changed to {newLocation}");
 
                         var geoService = new GeoService.GeoLocationWebServiceSoapClient();
                         var result = geoService.GetLatLong(newLocation);

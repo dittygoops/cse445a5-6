@@ -19,7 +19,7 @@ namespace Assignment
             // Save to session
             Session["captcha"] = captchaText;
 
-            using (Bitmap bmp = new Bitmap(160, 60))
+            using (Bitmap bmp = new Bitmap(180, 50))
             using (Graphics g = Graphics.FromImage(bmp))
             using (MemoryStream ms = new MemoryStream())
             {
@@ -42,6 +42,9 @@ namespace Assignment
         public bool VerifyCaptcha(string input)
         {
             string storedCaptcha = Session["captcha"] as string;
+            System.Diagnostics.Debug.WriteLine("verifying captcha");
+            System.Diagnostics.Debug.WriteLine(string.Equals(input, storedCaptcha, StringComparison.OrdinalIgnoreCase));
+            System.Diagnostics.Debug.WriteLine(storedCaptcha);
             return string.Equals(input, storedCaptcha, StringComparison.OrdinalIgnoreCase);
         }
 

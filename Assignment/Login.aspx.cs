@@ -13,6 +13,7 @@ namespace Assignment
         {
             if (!IsPostBack)
             {
+                // ✅ Check if UserAuth cookie exists
                 HttpCookie cookie = Request.Cookies["UserAuth"];
                 if (cookie != null)
                 {
@@ -23,6 +24,7 @@ namespace Assignment
                         Response.Redirect("~/Staff.aspx", false);
                 }
 
+                // ✅ No cookie → Load captcha and continue showing login page
                 LoadCaptcha();
 
                 string userType = Request.QueryString["type"];
@@ -79,12 +81,14 @@ namespace Assignment
 
             if (match)
             {
+                // ✅ Create your custom cookie (UserAuth)
                 HttpCookie userCookie = new HttpCookie("UserAuth");
                 userCookie["Username"] = UsernameInput.Text.Trim();
                 userCookie["Role"] = role;
                 userCookie.Expires = DateTime.Now.AddHours(1);
                 Response.Cookies.Add(userCookie);
 
+                // ✅ Redirect based on role
                 Response.Redirect(role == "staff" ? "Staff.aspx" : "Member.aspx", false);
             }
             else

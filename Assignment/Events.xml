@@ -15,4 +15,43 @@
     <Latitude>33.5902386</Latitude>
     <Longitude>-112.1023037</Longitude>
   </Event>
+  <Event>
+    <Name>Deloitte Networking Night</Name>
+    <Info>Connect with recruiters and professionals from our sponsor, Deloitte. Learn about internship and career opportunities in consulting and accounting. Business casual attire recommended. Refreshments provided.</Info>
+    <Date>2025-05-06</Date>
+    <Time>6:00PM</Time>
+    <Location>McCord Hall (W. P. Carey), Avnet Lounge, ASU Tempe</Location>
+    <Hours>2</Hours>
+    <Map>https://maps.geoapify.com/v1/staticmap?style=osm-carto&amp;width=600&amp;height=400&amp;center=lonlat:-1.655819,52.599224&amp;zoom=15&amp;marker=lonlat:-1.655819,52.599224;color:%23ff0000;size:medium&amp;apiKey=1f8559fa72c14b7d88b0292fcb580f7b</Map>
+    <RSVPed />
+    <Attending />
+    <Latitude>52.599224</Latitude>
+    <Longitude>-1.655819</Longitude>
+  </Event>
+  <Event>
+    <Name>Tech Trends Talk with Intel</Name>
+    <Info>Hear from an Intel executive about the latest trends impacting the tech industry and Intel's strategic direction. Gain insights into innovation and career paths at Intel. Q&amp;A session follows. Sponsored by Intel.</Info>
+    <Date>2025-05-15</Date>
+    <Time>12:30PM</Time>
+    <Location>Memorial Union (MU), Pima Auditorium, ASU Tempe</Location>
+    <Hours>1</Hours>
+    <Map>https://maps.geoapify.com/v1/staticmap?style=osm-carto&amp;width=600&amp;height=400&amp;center=lonlat:-90.4676530723429,30.5140474&amp;zoom=15&amp;marker=lonlat:-90.4676530723429,30.5140474;color:%23ff0000;size:medium&amp;apiKey=1f8559fa72c14b7d88b0292fcb580f7b</Map>
+    <RSVPed />
+    <Attending />
+    <Latitude>30.5140474</Latitude>
+    <Longitude>-90.4676530723429</Longitude>
+  </Event>
+  <Event>
+    <Name>Startup Pitch Workshop (Sponsored by GoDaddy)</Name>
+    <Info>Learn the art of crafting a compelling business pitch! This interactive workshop, sponsored by GoDaddy, features insights from their entrepreneurial experts. Perfect for aspiring founders. Bring your ideas!</Info>
+    <Date>2025-04-21</Date>
+    <Time>5:00PM</Time>
+    <Location>W. P. Carey School of Business (BAC), Room 110, ASU Tempe</Location>
+    <Hours>3</Hours>
+    <Map>https://maps.geoapify.com/v1/staticmap?style=osm-carto&amp;width=600&amp;height=400&amp;center=lonlat:-1.655819,52.599224&amp;zoom=15&amp;marker=lonlat:-1.655819,52.599224;color:%23ff0000;size:medium&amp;apiKey=1f8559fa72c14b7d88b0292fcb580f7b</Map>
+    <RSVPed />
+    <Attending />
+    <Latitude>52.599224</Latitude>
+    <Longitude>-1.655819</Longitude>
+  </Event>
 </Events>

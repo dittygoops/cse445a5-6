@@ -10,8 +10,8 @@
         <asp:TextBox ID="PasswordInput" runat="server" TextMode="Password" CssClass="form-control mb-2" placeholder="Password" />
 
 
-        <div style="width: 240px; height: 100px; background-color: #f8f9fa; display: flex; align-items: center; justify-content: center;" class="border rounded mb-3">
-            <asp:Image ID="CaptchaImage" runat="server" Width="200px" Height="70px" />
+        <div style="width: 400px; height: 100px; background-color: #f8f9fa; display: flex; align-items: center; justify-content: center;" class="border rounded mb-3">
+            <asp:Image ID="CaptchaImage" runat="server" Width="250px" Height="70px" />
         </div>
 
 
