@@ -103,6 +103,82 @@ namespace Assignment.GeoService {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="MapResult", Namespace="http://assignment.edu/")]
+    [System.SerializableAttribute()]
+    public partial class MapResult : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MapUrlField;
+        
+        private bool SuccessField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MessageField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string MapUrl {
+            get {
+                return this.MapUrlField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MapUrlField, value) != true)) {
+                    this.MapUrlField = value;
+                    this.RaisePropertyChanged("MapUrl");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public bool Success {
+            get {
+                return this.SuccessField;
+            }
+            set {
+                if ((this.SuccessField.Equals(value) != true)) {
+                    this.SuccessField = value;
+                    this.RaisePropertyChanged("Success");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string Message {
+            get {
+                return this.MessageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MessageField, value) != true)) {
+                    this.MessageField = value;
+                    this.RaisePropertyChanged("Message");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://assignment.edu/", ConfigurationName="GeoService.GeoLocationWebServiceSoap")]
     public interface GeoLocationWebServiceSoap {
@@ -113,6 +189,13 @@ namespace Assignment.GeoService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://assignment.edu/GetLatLong", ReplyAction="*")]
         System.Threading.Tasks.Task<Assignment.GeoService.GetLatLongResponse> GetLatLongAsync(Assignment.GeoService.GetLatLongRequest request);
+        
+        // CODEGEN: Generating message contract since element name GetMapImageUrlResult from namespace http://assignment.edu/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://assignment.edu/GetMapImageUrl", ReplyAction="*")]
+        Assignment.GeoService.GetMapImageUrlResponse GetMapImageUrl(Assignment.GeoService.GetMapImageUrlRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://assignment.edu/GetMapImageUrl", ReplyAction="*")]
+        System.Threading.Tasks.Task<Assignment.GeoService.GetMapImageUrlResponse> GetMapImageUrlAsync(Assignment.GeoService.GetMapImageUrlRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -183,6 +266,78 @@ namespace Assignment.GeoService {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetMapImageUrlRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetMapImageUrl", Namespace="http://assignment.edu/", Order=0)]
+        public Assignment.GeoService.GetMapImageUrlRequestBody Body;
+        
+        public GetMapImageUrlRequest() {
+        }
+        
+        public GetMapImageUrlRequest(Assignment.GeoService.GetMapImageUrlRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://assignment.edu/")]
+    public partial class GetMapImageUrlRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public double latitude;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public double longitude;
+        
+        public GetMapImageUrlRequestBody() {
+        }
+        
+        public GetMapImageUrlRequestBody(double latitude, double longitude) {
+            this.latitude = latitude;
+            this.longitude = longitude;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetMapImageUrlResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetMapImageUrlResponse", Namespace="http://assignment.edu/", Order=0)]
+        public Assignment.GeoService.GetMapImageUrlResponseBody Body;
+        
+        public GetMapImageUrlResponse() {
+        }
+        
+        public GetMapImageUrlResponse(Assignment.GeoService.GetMapImageUrlResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://assignment.edu/")]
+    public partial class GetMapImageUrlResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public Assignment.GeoService.MapResult GetMapImageUrlResult;
+        
+        public GetMapImageUrlResponseBody() {
+        }
+        
+        public GetMapImageUrlResponseBody(Assignment.GeoService.MapResult GetMapImageUrlResult) {
+            this.GetMapImageUrlResult = GetMapImageUrlResult;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface GeoLocationWebServiceSoapChannel : Assignment.GeoService.GeoLocationWebServiceSoap, System.ServiceModel.IClientChannel {
     }
@@ -233,6 +388,33 @@ namespace Assignment.GeoService {
             inValue.Body = new Assignment.GeoService.GetLatLongRequestBody();
             inValue.Body.address = address;
             return ((Assignment.GeoService.GeoLocationWebServiceSoap)(this)).GetLatLongAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Assignment.GeoService.GetMapImageUrlResponse Assignment.GeoService.GeoLocationWebServiceSoap.GetMapImageUrl(Assignment.GeoService.GetMapImageUrlRequest request) {
+            return base.Channel.GetMapImageUrl(request);
+        }
+        
+        public Assignment.GeoService.MapResult GetMapImageUrl(double latitude, double longitude) {
+            Assignment.GeoService.GetMapImageUrlRequest inValue = new Assignment.GeoService.GetMapImageUrlRequest();
+            inValue.Body = new Assignment.GeoService.GetMapImageUrlRequestBody();
+            inValue.Body.latitude = latitude;
+            inValue.Body.longitude = longitude;
+            Assignment.GeoService.GetMapImageUrlResponse retVal = ((Assignment.GeoService.GeoLocationWebServiceSoap)(this)).GetMapImageUrl(inValue);
+            return retVal.Body.GetMapImageUrlResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Assignment.GeoService.GetMapImageUrlResponse> Assignment.GeoService.GeoLocationWebServiceSoap.GetMapImageUrlAsync(Assignment.GeoService.GetMapImageUrlRequest request) {
+            return base.Channel.GetMapImageUrlAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Assignment.GeoService.GetMapImageUrlResponse> GetMapImageUrlAsync(double latitude, double longitude) {
+            Assignment.GeoService.GetMapImageUrlRequest inValue = new Assignment.GeoService.GetMapImageUrlRequest();
+            inValue.Body = new Assignment.GeoService.GetMapImageUrlRequestBody();
+            inValue.Body.latitude = latitude;
+            inValue.Body.longitude = longitude;
+            return ((Assignment.GeoService.GeoLocationWebServiceSoap)(this)).GetMapImageUrlAsync(inValue);
         }
     }
 }

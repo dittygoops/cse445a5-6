@@ -35,5 +35,16 @@ namespace Assignment
                 LocationResult.Text = "Failed to get location.";
             }
         }
+
+        protected void GetMapImageUrlButton_Click(object sender, EventArgs e)
+        {
+            double latitude = double.Parse(LatitudeInput.Text);
+            double longitude = double.Parse(LongitudeInput.Text);
+
+            var geoService = new GeoService.GeoLocationWebServiceSoapClient();
+            var mapUrl = geoService.GetMapImageUrl(latitude, longitude).MapUrl;
+
+            MapImage.ImageUrl = mapUrl;
+        }
     }
 }

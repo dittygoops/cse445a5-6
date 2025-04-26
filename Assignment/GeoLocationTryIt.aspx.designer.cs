@@ -41,6 +41,42 @@ namespace Assignment
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LocationResult;
         
-    
+        /// <summary>
+        /// LatitudeInput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox LatitudeInput;
+
+        /// <summary>
+        /// LongitudeInput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox LongitudeInput;
+
+        /// <summary>
+        /// GetMapImageUrlButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button GetMapImageUrlButton;
+
+        /// <summary>
+        /// MapImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image MapImage;
+        
+        
     }
 }

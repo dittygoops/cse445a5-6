@@ -112,7 +112,13 @@
     <Content Include="Connected Services\GeoService\Assignment.GeoService.GetLatLongResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\GeoService\Assignment.GeoService.GetMapImageUrlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <Content Include="Connected Services\GeoService\Assignment.GeoService.LocationResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\GeoService\Assignment.GeoService.MapResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\GeoService\GeoLocationWebService.disco" />

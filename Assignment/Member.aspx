@@ -33,6 +33,7 @@
                                 <p><strong>Date:</strong> <%# Eval("Date") %></p>
                                 <p><strong>Time:</strong> <%# Eval("Time") %></p>
                                 <p><strong>Location:</strong> <%# Eval("Location") %></p>
+                                <img src="<%# Eval("Map") %>" alt="Map" />
                                 <p><strong>Hours:</strong> <%# Eval("Hours") %></p>
                                 <p><strong>Info:</strong> <%# Eval("Info") %></p>
                             </div>

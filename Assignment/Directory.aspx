@@ -8,7 +8,7 @@
                 <div class="card-body">
                     <h2 id="directoryTableTitle" class="card-title fw-bold">Services and Components Directory Table</h2>
                     <div class="bg-light mb-3 p-2">
-                        <strong>Member Contribution: Abhave Abhilash 60%, Aditya Gupta 40%</strong>
+                        <strong>Member Contribution: Abhave Abhilash 50%, Aditya Gupta 50%</strong>
                     </div>
                     <div class="table-responsive">
                         <table class="table table-bordered">
@@ -27,7 +27,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>John Doe</td>
+                                    <td>Abhave Abhilash</td>
                                     <td>Hash Service</td>
                                     <td>DLL Function</td>
                                     <td>Hash</td>
@@ -39,7 +39,7 @@
                                 </tr>
                                 <!-- Add more rows as needed -->
                                  <tr>
-                                    <td rowspan="2">Jane Doe</td>
+                                    <td rowspan="2">Abhave Abhilash</td>
                                     <td rowspan="2">Captcha Service</td>
                                     <td rowspan="2">ASMX Web Service</td>
                                     <td>GenerateCaptcha</td>
@@ -57,19 +57,26 @@
                                 </tr>
 
                                 <tr>
-                                    <td>John Doe</td>
-                                    <td>GeoLocation Service</td>
-                                    <td>SOAP Web Service</td>
+                                    <td rowspan="2">Aditya Gupta</td>
+                                    <td rowspan="2">GeoLocation Service</td>
+                                    <td rowspan="2">SOAP Web Service</td>
                                     <td>GetLatLong</td>
                                     <td>Address (string)</td>
                                     <td>LocationResult (object)</td>
                                     <td>Retrieves latitude and longitude for a given address</td>
-                                    <td>3rd party Geoapify API</td>
-                                    <td><a href="GeoLocationTryIt.aspx">TryIt Page</a></td>
+                                    <td rowspan="2">3rd party Geoapify API</td>
+                                    <td rowspan="2"><a href="GeoLocationTryIt.aspx">TryIt Page</a></td>
                                 </tr>
 
                                 <tr>
-                                    <td>John Doe</td>
+                                    <td>GetMapImageUrl</td>
+                                    <td>Latitude (double), Longitude (double)</td>
+                                    <td>Map URL (string)</td>
+                                    <td>Retrieves a map image URL for a given latitude and longitude</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Aditya Gupta</td>
                                     <td>Member Storage</td>
                                     <td>XML Data</td>
                                     <td></td>
@@ -80,7 +87,7 @@
                                 </tr>
 
                                 <tr>
-                                    <td>John Doe</td>
+                                    <td>Aditya Gupta</td>
                                     <td>Events Storage</td>
                                     <td>XML Data</td>
                                     <td></td>
@@ -91,7 +98,7 @@
                                 </tr>
 
                                 <tr>
-                                    <td>John Doe</td>
+                                    <td>Abhave Abhilash</td>
                                     <td>Session starting application</td>
                                     <td>Global.asax</td>
                                     <td></td>
@@ -102,7 +109,7 @@
                                 </tr>
 
                                 <tr>
-                                    <td>John Doe</td>
+                                    <td>Abhave Abhilash</td>
                                     <td>Cookies</td>
                                     <td>HTTP Cookie</td>
                                     <td></td>
@@ -113,7 +120,7 @@
                                 </tr>
 
                                 <tr>
-                                    <td>John Doe</td>
+                                    <td>Aditya Gupta</td>
                                     <td>Landing Page</td>
                                     <td>.aspx page</td>
                                     <td></td>
@@ -124,7 +131,7 @@
                                 </tr>
 
                                 <tr>
-                                    <td>John Doe</td>
+                                    <td>Abhave Abhilash</td>
                                     <td>User Authentication Pages</td>
                                     <td>.aspx page</td>
                                     <td></td>
@@ -135,7 +142,7 @@
                                 </tr>
 
                                 <tr>
-                                    <td>John Doe</td>
+                                    <td>Aditya Gupta</td>
                                     <td>Dashboards</td>
                                     <td>.aspx page</td>
                                     <td></td>

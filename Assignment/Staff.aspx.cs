@@ -38,6 +38,7 @@ namespace Assignment
                 Time = e["Time"]?.InnerText,
                 Location = e["Location"]?.InnerText,
                 Hours = e["Hours"]?.InnerText,
+                Map = e["Map"]?.InnerText,
                 RSVPList = e["RSVPed"] != null ? string.Join(", ", e["RSVPed"].SelectNodes("User").Cast<XmlNode>().Select(u => u.InnerText.Split('|')[0])) : "None",
                 AttendingList = e["Attending"] != null ? string.Join("", e["Attending"].SelectNodes("User").Cast<XmlNode>().Select(u =>
                 {
@@ -100,6 +101,10 @@ namespace Assignment
                             SetOrUpdateXmlNode(doc, eventNode, "Longitude", result.Longitude.ToString());
                             changes.Add("Lat/Long updated");
                         }
+
+                        string map = geoService.GetMapImageUrl(result.Latitude, result.Longitude).MapUrl;
+                        SetOrUpdateXmlNode(doc, eventNode, "Map", map);
+                        changes.Add("Map updated");
                     }
                     if (eventNode["Hours"].InnerText != newHours)
                     {
@@ -132,6 +137,7 @@ namespace Assignment
             string address = NewEventLocation.Text.Trim();
             var geoService = new GeoService.GeoLocationWebServiceSoapClient();
             var coords = geoService.GetLatLong(address);
+            string map = geoService.GetMapImageUrl(coords.Latitude, coords.Longitude).MapUrl;
 
             newEvent.AppendChild(CreateElement(doc, "Name", NewEventName.Text.Trim()));
             newEvent.AppendChild(CreateElement(doc, "Info", NewEventInfo.Text.Trim()));
@@ -139,6 +145,7 @@ namespace Assignment
             newEvent.AppendChild(CreateElement(doc, "Time", NewEventTime.Text.Trim()));
             newEvent.AppendChild(CreateElement(doc, "Location", address));
             newEvent.AppendChild(CreateElement(doc, "Hours", NewEventHours.Text.Trim()));
+            newEvent.AppendChild(CreateElement(doc, "Map", map));
 
             newEvent.AppendChild(doc.CreateElement("RSVPed"));
             newEvent.AppendChild(doc.CreateElement("Attending"));

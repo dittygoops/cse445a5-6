@@ -1,62 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Events>
   <Event>
-    <Name>HI</Name>
-    <Info>TEst for HI and LAt and LOng Service</Info>
-    <Date>2025-12-1</Date>
-    <Time>5:00 PM</Time>
-    <Location>Arizona State University Tempe</Location>
+    <Name>test</Name>
+    <Info>asdfsdf</Info>
+    <Date>2024-02-20</Date>
+    <Time>6:00PM</Time>
+    <Location>27003 N 20th Ln Phoenix AZ</Location>
     <Hours>2</Hours>
-    <RSVPed>
-      <User>aditya</User>
-    </RSVPed>
-    <Attending>
-      <User>aditya|2025-04-20 15:16:49</User>
-    </Attending>
-    <Latitude>33.4213174</Latitude>
-    <Longitude>-111.933163054132</Longitude>
-  </Event>
-  <Event>
-    <Name>Deloitte Recruiting Stand</Name>
-    <Info>Meet with Deloitte's recruiters at Vista del Sol for summer opportunities!</Info>
-    <Date>2025-04-19</Date>
-    <Time>10:00am</Time>
-    <Location>Vista del Sol, Tempe, Arizona</Location>
-    <Hours>2</Hours>
+    <Map>https://maps.geoapify.com/v1/staticmap?style=osm-carto&amp;width=600&amp;height=400&amp;center=lonlat:-112.1023037,33.5902386&amp;zoom=15&amp;marker=lonlat:-112.1023037,33.5902386;color:%23ff0000;size:medium&amp;apiKey=1f8559fa72c14b7d88b0292fcb580f7b</Map>
     <RSVPed>
     </RSVPed>
     <Attending>
     </Attending>
-    <Latitude>33.4255117</Latitude>
-    <Longitude>-111.940016</Longitude>
-  </Event>
-  <Event>
-    <Name>Spanish Externship</Name>
-    <Info>Fun two day trip with the Spanish Committee to practice learned skills.</Info>
-    <Date>2026-02-22</Date>
-    <Time>12:00AM</Time>
-    <Location>Barcelona, Spain</Location>
-    <Hours>48</Hours>
-    <RSVPed>
-      <User>aditya</User>
-    </RSVPed>
-    <Attending>
-    </Attending>
-    <Latitude>41.3828939</Latitude>
-    <Longitude>2.1774322</Longitude>
-  </Event>
-  <Event>
-    <Name>Meet the President</Name>
-    <Info>Meet the President to learn more about the daily tasks on the most powerful man on earth.</Info>
-    <Date>2025-05-24</Date>
-    <Time>10:00AM</Time>
-    <Location>1600 Pennsylvania Avenue NW, Washington, DC 20500</Location>
-    <Hours>2</Hours>
-    <RSVPed>
-    </RSVPed>
-    <Attending>
-    </Attending>
-    <Latitude>38.897718</Latitude>
-    <Longitude>-77.0365482</Longitude>
+    <Latitude>33.5902386</Latitude>
+    <Longitude>-112.1023037</Longitude>
   </Event>
 </Events>

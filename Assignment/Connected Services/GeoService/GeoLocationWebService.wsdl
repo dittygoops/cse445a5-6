@@ -24,6 +24,28 @@
           <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
         </s:sequence>
       </s:complexType>
+      <s:element name="GetMapImageUrl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="latitude" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="longitude" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMapImageUrlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMapImageUrlResult" type="tns:MapResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MapResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MapUrl" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Success" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+        </s:sequence>
+      </s:complexType>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="GetLatLongSoapIn">
@@ -32,16 +54,35 @@
   <wsdl:message name="GetLatLongSoapOut">
     <wsdl:part name="parameters" element="tns:GetLatLongResponse" />
   </wsdl:message>
+  <wsdl:message name="GetMapImageUrlSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMapImageUrl" />
+  </wsdl:message>
+  <wsdl:message name="GetMapImageUrlSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMapImageUrlResponse" />
+  </wsdl:message>
   <wsdl:portType name="GeoLocationWebServiceSoap">
     <wsdl:operation name="GetLatLong">
       <wsdl:input message="tns:GetLatLongSoapIn" />
       <wsdl:output message="tns:GetLatLongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMapImageUrl">
+      <wsdl:input message="tns:GetMapImageUrlSoapIn" />
+      <wsdl:output message="tns:GetMapImageUrlSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="GeoLocationWebServiceSoap" type="tns:GeoLocationWebServiceSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="GetLatLong">
       <soap:operation soapAction="http://assignment.edu/GetLatLong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMapImageUrl">
+      <soap:operation soapAction="http://assignment.edu/GetMapImageUrl" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -61,13 +102,22 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetMapImageUrl">
+      <soap12:operation soapAction="http://assignment.edu/GetMapImageUrl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="GeoLocationWebService">
     <wsdl:port name="GeoLocationWebServiceSoap" binding="tns:GeoLocationWebServiceSoap">
-      <soap:address location="https://localhost:44382/GeoLocationWebService.asmx" />
+      <soap:address location="http://webstrar34.fulton.asu.edu/page1/GeoLocationWebService.asmx" />
     </wsdl:port>
     <wsdl:port name="GeoLocationWebServiceSoap12" binding="tns:GeoLocationWebServiceSoap12">
-      <soap12:address location="https://localhost:44382/GeoLocationWebService.asmx" />
+      <soap12:address location="http://webstrar34.fulton.asu.edu/page1/GeoLocationWebService.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

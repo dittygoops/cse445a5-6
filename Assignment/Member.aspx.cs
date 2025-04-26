@@ -135,6 +135,7 @@ namespace Assignment
                     Date = e["Date"]?.InnerText,
                     Time = e["Time"]?.InnerText,
                     Location = e["Location"]?.InnerText,
+                    Map = e["Map"]?.InnerText,
                     Hours = e["Hours"]?.InnerText,
                     IsRSVPed = rsvpedUsers.Contains(currentUser),
                     IsCheckedIn = attendingUsers.Contains(currentUser)
