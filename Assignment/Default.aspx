@@ -35,7 +35,7 @@
         </section>
 
         <!-- Cards Section -->
-        <div class="container px-4 py-5">
+        <div class="container-fluid px-4 py-5">
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0">

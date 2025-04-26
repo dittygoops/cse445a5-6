@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI.WebControls;
 using System.Xml;
 
@@ -9,33 +11,34 @@ namespace Assignment
 {
     public partial class Member : System.Web.UI.Page
     {
-
         protected void Page_Load(object sender, EventArgs e)
         {
+            HttpCookie cookie = Request.Cookies["UserAuth"];
+            if (cookie == null || cookie["Role"] != "member")
+            {
+                // Not logged in properly or wrong role → go back to login
+                Response.Redirect("~/Login.aspx?type=member", false);
+                Context.ApplicationInstance.CompleteRequest();
+                return;
+            }
+
             if (!IsPostBack)
             {
-                HttpCookie cookie = Request.Cookies["UserAuth"];
-                if (cookie == null || cookie["Role"] != "member")
-                {
-                    Response.Redirect("~/Default.aspx", false);
-                    return;
-                }
-
                 if (Session["RSVPMessage"] != null)
                 {
                     string message = Session["RSVPMessage"].ToString();
                     Session.Remove("RSVPMessage");
 
                     ClientScript.RegisterStartupScript(this.GetType(), "delayedModal", $@"
-                        <script>
-                            window.addEventListener('load', function () {{
-                                showModal('{message}');
-                                setTimeout(() => {{
-                                    const modal = bootstrap.Modal.getInstance(document.getElementById('FeedbackModal'));
-                                    if (modal) modal.hide();
-                                }}, 3000);
-                            }});
-                        </script>");
+                <script>
+                    window.addEventListener('load', function () {{
+                        showModal('{message}');
+                        setTimeout(() => {{
+                            const modal = bootstrap.Modal.getInstance(document.getElementById('FeedbackModal'));
+                            if (modal) modal.hide();
+                        }}, 3000);
+                    }});
+                </script>");
                 }
 
                 LoadEvents();
@@ -50,6 +53,8 @@ namespace Assignment
                 HandleProximityCheck(eventName, userLat, userLon);
             }
         }
+
+
 
         private void HandleProximityCheck(string eventName, double userLat, double userLon)
         {
@@ -69,8 +74,6 @@ namespace Assignment
 
             double distance = CalculateDistance(userLat, userLon, eventLat, eventLon);
 
-            System.Diagnostics.Debug.WriteLine("Distance: " + distance + " miles");
-
             if (distance > 1)
             {
                 ShowModal("❌ You were too far away to RSVP.");
@@ -78,7 +81,6 @@ namespace Assignment
             else
             {
                 ShowModal("✅ You checked in successfully.");
-                // Add check-in logic here if needed
             }
         }
 
@@ -96,8 +98,6 @@ namespace Assignment
                        Math.Sin(dLon / 2) * Math.Sin(dLon / 2);
 
             double c = 2 * Math.Asin(Math.Sqrt(a));
-            // not yet imported System.Diagnostics
-            System.Diagnostics.Debug.WriteLine("Distance: " + R * c + " miles");
             return R * c;
         }
 
@@ -112,8 +112,8 @@ namespace Assignment
             XmlDocument doc = new XmlDocument();
             doc.Load(filePath);
 
-            HttpCookie userCookie = Request.Cookies["UserAuth"];
-            string currentUser = userCookie != null ? userCookie["Username"] : "";
+            // Pull username from FormsAuthentication
+            string currentUser = User.Identity.Name;
 
             var events = doc.SelectNodes("//Event").Cast<XmlNode>().Select(e =>
             {
@@ -127,7 +127,6 @@ namespace Assignment
                     .Select(u => u.InnerText.Split('|')[0]) // get just the username
                     .ToList() ?? new List<string>();
 
-
                 return new
                 {
                     Name = e["Name"]?.InnerText,
@@ -139,7 +138,6 @@ namespace Assignment
                     Hours = e["Hours"]?.InnerText,
                     IsRSVPed = rsvpedUsers.Contains(currentUser),
                     IsCheckedIn = attendingUsers.Contains(currentUser)
-
                 };
             }).ToList();
 
@@ -170,14 +168,7 @@ namespace Assignment
                 return;
             }
 
-            HttpCookie userCookie = Request.Cookies["UserAuth"];
-            if (userCookie == null || string.IsNullOrEmpty(userCookie["Username"]))
-            {
-                ShowModal("⚠️ You must be logged in to RSVP.");
-                return;
-            }
-
-            string username = userCookie["Username"];
+            string username = User.Identity.Name; // Get username properly now
 
             if (e.CommandName == "RSVP")
             {
@@ -188,14 +179,12 @@ namespace Assignment
                     eventNode.AppendChild(rsvpedNode);
                 }
 
-                // Check if the user already RSVPed
                 XmlNode existingUser = rsvpedNode.SelectNodes("User")
                     .Cast<XmlNode>()
                     .FirstOrDefault(node => node.InnerText == username);
 
                 if (existingUser == null)
                 {
-                    // ADD user
                     XmlElement newUser = doc.CreateElement("User");
                     newUser.InnerText = username;
                     rsvpedNode.AppendChild(newUser);
@@ -204,12 +193,9 @@ namespace Assignment
                 }
                 else
                 {
-                    // REMOVE user
                     rsvpedNode.RemoveChild(existingUser);
-                    
-                    // if the user is attending, remove them from attending
+
                     XmlNode attendingNode = eventNode["Attending"];
-                    // iterate through the children of the attending node and remove the user
                     foreach (XmlNode child in attendingNode.ChildNodes)
                     {
                         if (child.InnerText.StartsWith(username + "|"))
@@ -230,7 +216,7 @@ namespace Assignment
                     return;
                 }
 
-                Response.Redirect(Request.RawUrl, false); // Reload page and trigger message
+                Response.Redirect(Request.RawUrl, false);
             }
 
             if (e.CommandName == "CheckIn")
@@ -246,7 +232,6 @@ namespace Assignment
                     ShowModal("⚠️ You must RSVP before checking in.");
                     return;
                 }
-                
 
                 XmlNode attendingNode = eventNode["Attending"];
                 if (attendingNode == null)
@@ -255,14 +240,9 @@ namespace Assignment
                     eventNode.AppendChild(attendingNode);
                 }
 
-                bool alreadyCheckedIn = false;
-                foreach (XmlNode child in attendingNode.ChildNodes)
-                {
-                    if (child.InnerText.StartsWith(username + "|"))
-                    {
-                        alreadyCheckedIn = true;
-                    }
-                }
+                bool alreadyCheckedIn = attendingNode.SelectNodes("User")
+                    .Cast<XmlNode>()
+                    .Any(node => node.InnerText.StartsWith(username + "|"));
 
                 if (!alreadyCheckedIn)
                 {
@@ -271,27 +251,17 @@ namespace Assignment
                     newUser.InnerText = $"{username}|{timestamp}";
                     attendingNode.AppendChild(newUser);
 
-                    try
-                    {
-                        doc.Save(filePath);
-                        Session["RSVPMessage"] = "✅ You have successfully checked into this event.";
-                    }
-                    catch (Exception ex)
-                    {
-                        ShowModal($"⚠️ Error during check-in: {ex.Message}");
-                        return;
-                    }
+                    Session["RSVPMessage"] = "✅ You have successfully checked into this event.";
                 }
                 else
                 {
-                    // iterate through the children of the attending node and remove the user
                     foreach (XmlNode child in attendingNode.ChildNodes)
-                        {
+                    {
                         if (child.InnerText.StartsWith(username + "|"))
                         {
                             attendingNode.RemoveChild(child);
                         }
-                    }   
+                    }
                     Session["RSVPMessage"] = "❌ Removed from attending.";
                 }
 
@@ -305,10 +275,8 @@ namespace Assignment
                     return;
                 }
 
-                Response.Redirect(Request.RawUrl, false); // reload with message
+                Response.Redirect(Request.RawUrl, false);
             }
-
-
 
             LoadEvents();
         }

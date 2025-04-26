@@ -1,120 +1,69 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\",
+  "WorkspaceRootPath": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C59F1814-5434-48C2-9CA7-41BBF9AA70E6}|..\\GeoLocationService\\GeoLocationService.csproj|c:\\users\\adity\\documents\\spring2025\\cse445\\assignment 5-6\\geolocationservice\\geolocationwebservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\member.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:member.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\adity\\documents\\spring2025\\cse445\\assignment 5-6\\assignment\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\captchaservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:captchaservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C59F1814-5434-48C2-9CA7-41BBF9AA70E6}|..\\GeoLocationService\\GeoLocationService.csproj|c:\\users\\adity\\documents\\spring2025\\cse445\\assignment 5-6\\geolocationservice\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\events.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:events.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528A4383-312A-45F6-BEC2-826376DA516F}|..\\LoginSecurityLib\\LoginSecurityLib.csproj|c:\\users\\adity\\documents\\spring2025\\cse445\\assignment 5-6\\loginsecuritylib\\hasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\member.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:member.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\directory.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:directory.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\viewswitcher.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:viewswitcher.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\hashtryit.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:hashtryit.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\geolocationtryit.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:geolocationtryit.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\captchatryit.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:captchatryit.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\directory.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:directory.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\directory.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:directory.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\signup.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:signup.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\site.mobile.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:site.mobile.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\member.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:member.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\default.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:default.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\login.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:login.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\member.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:member.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\captchaservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:captchaservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\staff.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:staff.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\events.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:events.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\staff.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:staff.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|c:\\users\\aabhilas\\cse445a5-6\\assignment\\member.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C32CF20F-6FDF-437E-836A-FC35B8C70783}|Assignment.csproj|solutionrelative:member.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 10,
+          "DockedWidth": 183,
+          "SelectedChildIndex": 8,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Site.Master",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Site.Master",
-              "RelativeDocumentMoniker": "Site.Master",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Site.Master",
-              "RelativeToolTip": "Site.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-18T00:22:22.353Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -124,285 +73,183 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Default.aspx",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Default.aspx",
-              "RelativeDocumentMoniker": "Default.aspx",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Default.aspx",
-              "RelativeToolTip": "Default.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-18T00:16:31.177Z",
+              "DocumentIndex": 4,
+              "Title": "Login.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Login.aspx.designer.cs",
+              "RelativeDocumentMoniker": "Login.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Login.aspx.designer.cs",
+              "RelativeToolTip": "Login.aspx.designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T21:55:24.341Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Global.asax.cs",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Global.asax.cs",
-              "RelativeDocumentMoniker": "Global.asax.cs",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Global.asax.cs",
-              "RelativeToolTip": "Global.asax.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T22:52:27.645Z"
+              "DocumentIndex": 2,
+              "Title": "Member.aspx",
+              "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Member.aspx",
+              "RelativeDocumentMoniker": "Member.aspx",
+              "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Member.aspx",
+              "RelativeToolTip": "Member.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-26T20:37:21.64Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
+              "Title": "Staff.aspx",
+              "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Staff.aspx",
+              "RelativeDocumentMoniker": "Staff.aspx",
+              "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Staff.aspx",
+              "RelativeToolTip": "Staff.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-26T20:44:46.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Staff.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Staff.aspx.cs",
+              "RelativeDocumentMoniker": "Staff.aspx.cs",
+              "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Staff.aspx.cs",
+              "RelativeToolTip": "Staff.aspx.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T20:44:48.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Events.xml",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Events.xml",
+              "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Events.xml",
               "RelativeDocumentMoniker": "Events.xml",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Events.xml",
+              "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Events.xml",
               "RelativeToolTip": "Events.xml",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-04-19T07:26:39.272Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Member.xml",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Member.xml",
-              "RelativeDocumentMoniker": "Member.xml",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Member.xml",
-              "RelativeToolTip": "Member.xml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-04-18T05:59:00.298Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Hasher.cs",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\LoginSecurityLib\\Hasher.cs",
-              "RelativeDocumentMoniker": "..\\LoginSecurityLib\\Hasher.cs",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\LoginSecurityLib\\Hasher.cs",
-              "RelativeToolTip": "..\\LoginSecurityLib\\Hasher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T03:39:51.489Z"
+              "WhenOpened": "2025-04-26T20:54:39.486Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "Login.aspx.cs",
+              "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Login.aspx.cs",
+              "RelativeToolTip": "Login.aspx.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAkwGYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T05:57:50.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.aspx",
+              "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Login.aspx",
+              "RelativeDocumentMoniker": "Login.aspx",
+              "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Login.aspx*",
+              "RelativeToolTip": "Login.aspx*",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-26T21:00:35.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Member.xml",
+              "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Member.xml",
+              "RelativeDocumentMoniker": "Member.xml",
+              "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Member.xml",
+              "RelativeToolTip": "Member.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-04-26T19:46:02.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Site.Master",
+              "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Site.Master",
+              "RelativeDocumentMoniker": "Site.Master",
+              "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Site.Master",
+              "RelativeToolTip": "Site.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-26T21:40:30.58Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 217,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Default.aspx",
+              "RelativeDocumentMoniker": "Default.aspx",
+              "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Default.aspx",
+              "RelativeToolTip": "Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-26T21:39:30.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Member.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Member.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Member.aspx.cs",
               "RelativeDocumentMoniker": "Member.aspx.cs",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Member.aspx.cs",
+              "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Member.aspx.cs",
               "RelativeToolTip": "Member.aspx.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAADwv5IAAAAMAAAAAAAAAA==",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-20T04:41:20.178Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GeoLocationWebService.asmx.cs",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\GeoLocationService\\GeoLocationWebService.asmx.cs",
-              "RelativeDocumentMoniker": "..\\GeoLocationService\\GeoLocationWebService.asmx.cs",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\GeoLocationService\\GeoLocationWebService.asmx.cs",
-              "RelativeToolTip": "..\\GeoLocationService\\GeoLocationWebService.asmx.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAgwGAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T04:20:09.456Z",
+              "DocumentIndex": 3,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-26T22:14:22.883Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "CaptchaService.asmx.cs",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\CaptchaService.asmx.cs",
+              "DocumentMoniker": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\CaptchaService.asmx.cs",
               "RelativeDocumentMoniker": "CaptchaService.asmx.cs",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\CaptchaService.asmx.cs",
+              "ToolTip": "C:\\Users\\aabhilas\\cse445a5-6\\Assignment\\CaptchaService.asmx.cs",
               "RelativeToolTip": "CaptchaService.asmx.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAADwvxMAAAAtAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T04:15:17.723Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Global.asax.cs",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\GeoLocationService\\Global.asax.cs",
-              "RelativeDocumentMoniker": "..\\GeoLocationService\\Global.asax.cs",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\GeoLocationService\\Global.asax.cs",
-              "RelativeToolTip": "..\\GeoLocationService\\Global.asax.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T23:03:18.462Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Directory.aspx.designer.cs",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Directory.aspx.designer.cs",
-              "RelativeDocumentMoniker": "Directory.aspx.designer.cs",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Directory.aspx.designer.cs",
-              "RelativeToolTip": "Directory.aspx.designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T03:29:01.324Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ViewSwitcher.ascx",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\ViewSwitcher.ascx",
-              "RelativeDocumentMoniker": "ViewSwitcher.ascx",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\ViewSwitcher.ascx",
-              "RelativeToolTip": "ViewSwitcher.ascx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
-              "WhenOpened": "2025-04-20T04:38:39.05Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Login.aspx",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Login.aspx",
-              "RelativeDocumentMoniker": "Login.aspx",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Login.aspx",
-              "RelativeToolTip": "Login.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-18T05:57:46.657Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "HashTryIt.aspx",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\HashTryIt.aspx",
-              "RelativeDocumentMoniker": "HashTryIt.aspx",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\HashTryIt.aspx",
-              "RelativeToolTip": "HashTryIt.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-20T04:04:46.418Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "GeoLocationTryIt.aspx",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\GeoLocationTryIt.aspx",
-              "RelativeDocumentMoniker": "GeoLocationTryIt.aspx",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\GeoLocationTryIt.aspx",
-              "RelativeToolTip": "GeoLocationTryIt.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-20T04:24:27.27Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CaptchaTryIt.aspx",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\CaptchaTryIt.aspx",
-              "RelativeDocumentMoniker": "CaptchaTryIt.aspx",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\CaptchaTryIt.aspx",
-              "RelativeToolTip": "CaptchaTryIt.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-20T03:59:41.85Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Directory.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Directory.aspx.cs",
-              "RelativeDocumentMoniker": "Directory.aspx.cs",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Directory.aspx.cs",
-              "RelativeToolTip": "Directory.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T03:29:09.337Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Directory.aspx",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Directory.aspx",
-              "RelativeDocumentMoniker": "Directory.aspx",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Directory.aspx",
-              "RelativeToolTip": "Directory.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-18T17:09:02.805Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Signup.aspx",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Signup.aspx",
-              "RelativeDocumentMoniker": "Signup.aspx",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Signup.aspx",
-              "RelativeToolTip": "Signup.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-18T06:00:50.864Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Login.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Login.aspx.cs",
-              "RelativeDocumentMoniker": "Login.aspx.cs",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Login.aspx.cs",
-              "RelativeToolTip": "Login.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T05:57:50.915Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Default.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Default.aspx.cs",
-              "RelativeDocumentMoniker": "Default.aspx.cs",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Default.aspx.cs",
-              "RelativeToolTip": "Default.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T00:16:33.055Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Site.Mobile.Master",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Site.Mobile.Master",
-              "RelativeDocumentMoniker": "Site.Mobile.Master",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Site.Mobile.Master",
-              "RelativeToolTip": "Site.Mobile.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-18T00:43:47.611Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Default.aspx.designer.cs",
-              "DocumentMoniker": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Default.aspx.designer.cs",
-              "RelativeDocumentMoniker": "Default.aspx.designer.cs",
-              "ToolTip": "C:\\Users\\adity\\Documents\\Spring2025\\CSE445\\Assignment 5-6\\Assignment\\Default.aspx.designer.cs",
-              "RelativeToolTip": "Default.aspx.designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T00:16:31.532Z"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 200,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "WhenOpened": "2025-04-18T04:15:17.723Z",
+              "EditorCaption": ""
             }
           ]
         }

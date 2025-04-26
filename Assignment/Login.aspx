@@ -10,8 +10,8 @@
         <asp:TextBox ID="PasswordInput" runat="server" TextMode="Password" CssClass="form-control mb-2" placeholder="Password" />
 
 
-        <div style="width: 240px; height: 100px; background-color: #f8f9fa; display: flex; align-items: center; justify-content: center;" class="border rounded mb-3">
-            <asp:Image ID="CaptchaImage" runat="server" Width="200px" Height="70px" />
+        <div style="width: 400px; height: 100px; background-color: #f8f9fa; display: flex; align-items: center; justify-content: center;" class="border rounded mb-3">
+            <asp:Image ID="CaptchaImage" runat="server" Width="250px" Height="70px" />
         </div>
 
 
@@ -39,6 +39,19 @@
                     <ul>
                         <li>Username: TA</li>
                         <li>Password: Cse445!</li>
+                    </ul>
+                </div>
+            </div>
+        <% } %>
+
+        <% if (Request.QueryString["type"] == "member") { %>
+            <div class="card my-3" style="background-color: #e3f2fd;">
+                <div class="card-body">
+                    <h5 class="card-title">Example Credentials for Testing</h5>
+                    <p class="card-text">You can use the following credentials for testing:</p>
+                    <ul>
+                        <li>Username: test</li>
+                        <li>Password: test</li>
                     </ul>
                 </div>
             </div>
